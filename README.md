@@ -37,19 +37,21 @@ If you want to use phpMyAdmin use the branch called: **phpmyadmin-feature**
 
 
 ## Troubleshooting
-If you get a "forbidden error 403"
-Fix it with:
+
+### Forbidden error 403 
 ```
 sudo chmod -Rf 755 /path/to/project
 ``` 
 
+### Error activating InnoDB
 If you get errors about activating InnoDB and you are on Windows or Mac, you
 may be encountering [this
 issue](https://github.com/docker-library/mariadb/issues/95) with using
 host-mapped volumes for MariaDB. Work-around is to use a named volume
 (persistent but not mapped), or [add/overwrite mysql config](https://github.com/docker-library/mariadb/issues/95#issuecomment-391587301) before entry.
 
-If missing libs please let me know or create a pull request
+### Missing libs
+Please let me know or create a pull request
 
 ## Repos
 https://hub.docker.com/r/glats/alpine-lamp  
