@@ -42,6 +42,13 @@ Fix it with:
 ```
 sudo chmod -Rf 755 /path/to/project
 ``` 
+
+If you get errors about activating InnoDB and you are on Windows or Mac, you
+may be encountering [this
+issue](https://github.com/docker-library/mariadb/issues/95) with using
+host-mapped volumes for MariaDB. Work-around is to use a named volume
+(persistent but not mapped), or [add/overwrite mysql config](https://github.com/docker-library/mariadb/issues/95#issuecomment-391587301) before entry.
+
 If missing libs please let me know or create a pull request
 
 ## Repos
