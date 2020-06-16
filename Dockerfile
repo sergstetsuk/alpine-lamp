@@ -28,7 +28,8 @@ RUN apk add mariadb mariadb-client \
     php7-mbstring \
     php7-apcu \
     php7-opcache \
-    php7-tokenizer
+    php7-tokenizer \
+    php7-simplexml
 
 RUN curl -sS https://getcomposer.org/installer | \
     php -- --install-dir=/usr/bin --filename=composer
